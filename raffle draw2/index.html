@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lucky Raffle Draw</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle3"></div>
+    </div>
+
+    <main class="container">
+
+        <header>
+            <div class="logo">🎟️</div>
+
+            <h1>LUCKY DRAW</h1>
+
+            <p>
+                Add your partners and let the raffle choose the winners!
+            </p>
+        </header>
+
+
+        <section class="card">
+
+            <!-- ADD PARTICIPANT -->
+
+            <div class="input-area">
+
+                <input
+                    type="text"
+                    id="participantInput"
+                    placeholder="Enter partner / participant name"
+                >
+
+                <button id="addButton">
+                    + ADD
+                </button>
+
+            </div>
+
+
+            <!-- PARTICIPANT COUNT -->
+
+            <div class="stats">
+
+                <div class="stat-box">
+                    <span class="stat-icon">👥</span>
+
+                    <div>
+                        <small>PARTICIPANTS</small>
+                        <strong id="participantCount">0</strong>
+                    </div>
+                </div>
+
+
+                <div class="stat-box">
+                    <span class="stat-icon">🏆</span>
+
+                    <div>
+                        <small>WINNERS</small>
+                        <strong id="winnerCount">0</strong>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- PARTICIPANT LIST -->
+
+            <h2>👥 Participants</h2>
+
+            <div id="participantList" class="participant-list">
+
+                <p class="empty">
+                    No participants added yet.
+                </p>
+
+            </div>
+
+
+            <!-- DRAW AREA -->
+
+            <div class="draw-area">
+
+                <div id="winnerBox" class="winner-box">
+
+                    <span id="winnerText">
+                        🎁 READY?
+                    </span>
+
+                </div>
+
+
+                <button id="drawButton" class="draw-button">
+                    🎲 DRAW WINNER
+                </button>
+
+
+                <button id="resetButton" class="reset-button">
+                    🔄 RESET EVERYTHING
+                </button>
+
+            </div>
+
+
+            <!-- WINNER HISTORY -->
+
+            <div class="history">
+
+                <h2>🏆 Winner History</h2>
+
+                <div id="winnerHistory" class="winner-history">
+
+                    <p class="empty">
+                        No winners yet.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+            ✨ GOOD LUCK EVERYONE! ✨
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
